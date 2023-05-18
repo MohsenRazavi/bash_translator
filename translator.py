@@ -4,8 +4,10 @@ import time
 
 system('clear')
 
-lang = input()   
+lang = input('target lang (Fa/*): ')   
 txt = input('>>> ')
+if not lang:
+    lang = 'fa'
 
 while txt!='q':
     try:    
